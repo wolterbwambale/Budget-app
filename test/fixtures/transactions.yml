@@ -3,13 +3,9 @@
 one:
   name: MyString
   amount: 9.99
-  10: MyString
-  2: MyString
-  author: one
+  category: one
 
 two:
   name: MyString
   amount: 9.99
-  10: MyString
-  2: MyString
-  author: two
+  category: two

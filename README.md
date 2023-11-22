@@ -125,7 +125,7 @@ You can deploy this project using:
 
 - Deployed using render: [Live](/) 
 
-- Presentation: [Video](...)
+- Presentation: [Video](https://www.loom.com/share/62633060f94c409d98dd9b32f83c4eb8) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

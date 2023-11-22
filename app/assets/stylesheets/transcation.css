@@ -3,10 +3,6 @@
   flex-direction: column;
 }
 
-.nav-btn1 {
-  margin-bottom: 10px;
-}
-
 .nav-btn1:last-child {
   margin-bottom: 0;
 }
@@ -23,6 +19,14 @@
 
 .card {
   margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  width: 80%;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  overflow: hidden;
 }
 
 .total-transactions h2 {
@@ -56,4 +60,23 @@
 
 .nav-btn {
   margin-top: 10px;
+}
+
+.card-header {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.card-body {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-details i {
+  margin-right: 10px;
+}
+
+.icon {
+  font-size: 80px;
 }

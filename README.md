@@ -123,7 +123,7 @@ rspec spec
 
 You can deploy this project using:
 
-- Deployed using render: [Live](/) 
+- Deployed using render: [Live](https://budget-kvg1.onrender.com/) 
 
 - Presentation: [Video](https://www.loom.com/share/62633060f94c409d98dd9b32f83c4eb8) 
 

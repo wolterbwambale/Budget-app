@@ -1,0 +1,30 @@
+<h2>Add a New Category</h2>
+
+<%= form_with(model: @category, url: categories_path) do |form| %>
+  <% if @category.errors.any? %>
+    <div id="error_explanation">
+      <h3><%= pluralize(@category.errors.count, "error") %> prohibited this category from being saved:</h3>
+
+      <ul>
+      <% @category.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+ <div class="field">
+  <%= form.label :icon %>
+  <%= form.select :icon, options_for_select(['fas fa-home', 'fas fa-car', 'fas fa-coffee', 'fas fa-camera','fas fa-book' ]), {}, { class: 'form-control' } %>
+  <small class="text-muted">For icons, use Font Awesome classes.</small>
+</div>
+  <%= form.submit "Save" %>
+<% end %>
+
+<%= link_to "Back", categories_path %>
+
+

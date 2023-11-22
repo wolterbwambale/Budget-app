@@ -1,0 +1,60 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-btn1 {
+    margin-bottom: 10px; 
+  }
+  
+  .nav-btn1:last-child {
+    margin-bottom: 0; 
+  }
+
+  .row {
+    display: block; 
+  }
+  
+  .col-lg-4,
+  .col-md-6,
+  .col-sm-12 {
+    width: 100%; 
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .total-transactions h2 {
+    font-size: 18px; 
+  }
+  
+  .card-header b {
+    font-size: 16px; 
+  }
+  
+  .transaction-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-details {
+    flex: 1; /* Take up available space */
+  }
+  
+  /* Button Links */
+  .button-links {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 10px; 
+  }
+  
+  .button-links a {
+    flex: 1; 
+    margin-right: 5px; 
+  }
+  
+  .nav-btn {
+    margin-top: 10px; 
+  }
+  

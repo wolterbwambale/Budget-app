@@ -1,14 +1,9 @@
-.navbar {
-  display: flex;
-  flex-direction: column;
+#nav {
+  top: 0;
 }
 
 .nav-btn1:last-child {
   margin-bottom: 0;
-}
-
-.row {
-  display: block;
 }
 
 .col-lg-4,

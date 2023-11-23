@@ -1,10 +1,23 @@
-<div class="col d-flex justify-content-center">
-      <div class="col-lg-3  mx-auto">
-        <h1 class="fw-bold mb-5">Budget App</h1>
-        <p class="lead text-body-secondary mb-5"> click below to access the app</p>
-        <p class="first_links">
-          <%= link_to 'Login',new_user_session_path, class:"btn btn-primary my-2" %>
-          <%= link_to 'Sign Up',new_user_registration_path,class:"btn btn-secondary my-2"%>
-        </p>
+<div class="d-flex justify-content-center">
+  <div class="col-lg-3 mx-auto text-center">
+    <h1 class="fw-bold mb-5">Budget App</h1>
+    <p class="lead text-body-secondary mb-5" id="lead2">Click below to access the app</p>
+  </div>
+</div>
+
+<div class="fixed-bottom">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex flex-column">
+          <div class="mb-2">
+            <%= link_to 'Login', new_user_session_path, class: "btn btn-primary btn-block d-block w-100" %>
+          </div>
+          <div class="mb-2">
+            <%= link_to 'Sign Up', new_user_registration_path, class: "btn btn-secondary btn-block d-block w-100" %>
+          </div>
+        </div>
       </div>
- </div>
+    </div>
+  </div>
+</div>

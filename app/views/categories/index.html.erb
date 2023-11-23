@@ -1,13 +1,19 @@
-  <div class="navbar bg-primary" id="nav">
-    <div class="nav-btn">
-  <%= link_to root_path, class: 'btn btn-primary' do %>
-    <i class="fas fa-arrow-left"></i>
-  <% end %>
-</div>
-    <div  style="float: right;">
-      <%= link_to 'Sign Out', destroy_user_session_path, 'data-turbo-method': :delete, class:'btn btn-danger btn-sm' %>
-    </div>
+<div class="navbar bg-primary text-white" id="nav">
+  <div class="nav-btn">
+    <%= link_to root_path, class: 'btn btn-primary' do %>
+      <i class="fas fa-arrow-left"></i>
+    <% end %>
   </div>
+  <div class="text-center fs-2">
+    <h2>Categories</h2>
+  </div>
+<div class="d-flex mr-5"style="float: right;">
+  <%= link_to 'Sign Out', destroy_user_session_path, 'data-turbo-method': :delete, class: 'text-white',id:"sign-btn" %>
+</div>
+  </div>
+</div>
+</div>
+    
 
   <div class="row">
     <% @categories.each do |category| %>
@@ -31,7 +37,7 @@
               <tbody>
                 <% category.transactions.each do |transaction| %>
                   <tr>
-                    <td><i class="icon <%= category.icon %>"></i></td>
+                    <td><img src="<%= category.icon %>" alt="icon"></td>
                     <td><%= transaction.name %></td>
                     <td>$<%= transaction.amount %></td>
                   </tr>
@@ -43,6 +49,6 @@
       </div>
     <% end %>
   </div>
-<div class="fixed-bottom">>
-  <%= link_to 'New category', new_category_path, class: 'btn btn-primary btn-sm bg-primary d-block w-100' %>
+<div class="fixed-bottom">
+  <%= link_to 'New category', new_category_path, class: 'btn btn-primary btn-lg bg-success d-block w-100' %>
 </div>

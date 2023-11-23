@@ -1,4 +1,13 @@
-<h2>Add a New Category</h2>
+<div class="navbar bg-primary px-2 mb-5 text-white">
+  <div class="nav-btn">
+    <%= link_to categories_path, class: 'btn btn-primary' do %>
+      <i class="fas fa-arrow-left"></i>
+    <% end %>
+  </div>
+  <div class="text-center">
+    <h2>Add a New Category</h2>
+  </div>
+</div>
 
 <%= form_with(model: @category, url: categories_path) do |form| %>
   <% if @category.errors.any? %>
@@ -19,12 +28,10 @@
   </div>
  <div class="field">
   <%= form.label :icon %>
-  <%= form.select :icon, options_for_select(['fas fa-home', 'fas fa-car', 'fas fa-coffee', 'fas fa-camera','fas fa-book' ]), {}, { class: 'form-control' } %>
-  <small class="text-muted">For icons, use Font Awesome classes.</small>
-</div>
-  <%= form.submit "Save" %>
+  <%= form.text_field :icon, class: 'form-control', placeholder: 'Icon Path' %>
+  <small class="text-muted">please fill the text box  with the icon link  </small>
+</div class="">
+  <%= form.submit "Save",class: "btn btn-secondary btn-block d-block w-100" %>
 <% end %>
-
-<%= link_to "Back", categories_path %>
 
 

@@ -9,6 +9,7 @@
 
 node_modules/
 
+.vcode/
 
 # Ignore all logfiles and tempfiles.
 /log/*

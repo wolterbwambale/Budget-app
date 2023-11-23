@@ -37,13 +37,13 @@ select {
 }
 
 input[type="submit"] {
-  padding: 10px 20px;
   font-size: 16px;
-  background-color: #007bff;
+  background: #0076ff;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width: inherit;
 }
 
 input[type="submit"]:hover {

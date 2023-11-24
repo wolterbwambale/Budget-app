@@ -68,10 +68,34 @@
   flex-wrap: wrap;
 }
 
-.card-details i {
-  margin-right: 10px;
+.transaction-row {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 8px;
 }
 
-.icon {
-  font-size: 80px;
+.transaction-column {
+  flex: 2;
+}
+
+.align-center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.align-c {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.blue-link {
+  text-decoration: none;
+  color: rgb(112, 112, 114);
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+table img {
+  width: 80px;
 }

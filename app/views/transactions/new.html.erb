@@ -1,0 +1,28 @@
+<div class="navbar bg-primary text-white">
+  <div class="nav-btn">
+    <%= link_to categories_path, class: 'btn btn-primary' do %>
+      <i class="fas fa-arrow-left"></i>
+    <% end %>
+  </div>
+  <div class="text-center px-4 fs-4">
+    <h2>Add Transaction</h2>
+  </div>
+  </div>
+<%= form_with(model: @transaction, url: category_transactions_path(@category), local: true) do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :amount %>
+    <%= f.text_field :amount %>
+  </div>
+
+  <div class="field">
+    <%= f.label :category_id %>
+    <%= f.collection_select :category_id, Category.all, :id, :name %>
+  </div>
+  
+  <%= f.submit 'Save',class: "btn btn-secondary btn-block d-block w-100"%>
+<% end %>

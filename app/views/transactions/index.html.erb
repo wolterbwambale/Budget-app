@@ -1,0 +1,37 @@
+<div class="navbar bg-primary text-white">
+  <div class="nav-btn">
+    <%= link_to categories_path, class: 'btn btn-primary' do %>
+      <i class="fas fa-arrow-left"></i>
+    <% end %>
+  </div>
+  <div class="text-center px-4 fs-4">
+    <h2>Transactions</h2>
+  </div>
+  </div>
+  <div class="card-header">
+    <h1 class="card-title">Transactions for <%= @category.name %></h1>
+  </div>
+  <div class="total-transactions">
+  <h2>Total Amount: $<%= @total_amount %></h2>
+</div>
+  <% @category.transactions.each do |transaction| %>
+    <div class="transaction-row">
+      <div class="transaction-column">
+        <div class="hr border-primary">
+          <%= transaction.name %>
+        </div>
+      </div>
+      <div class="transaction-column">
+        <div class="hr">
+           $<%= transaction.amount %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+   </div>
+  </div>
+  </div>
+</div>
+<div class="fixed-bottom">
+    <%= link_to 'New transaction', new_category_transaction_path(@category), class: 'btn btn-primary btn-lg d-block w-100', style: 'background-color: #5fb523; padding: 20px; font-size: 24px;' %>
+  </div>

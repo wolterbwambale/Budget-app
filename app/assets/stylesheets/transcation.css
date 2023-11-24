@@ -1,0 +1,101 @@
+#nav {
+  top: 0;
+}
+
+.nav-btn1:last-child {
+  margin-bottom: 0;
+}
+
+.col-lg-4,
+.col-md-6,
+.col-sm-12 {
+  width: 100%;
+}
+
+.card {
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  width: 80%;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  overflow: hidden;
+}
+
+.total-transactions h2 {
+  font-size: 18px;
+  background-color: #eee;
+}
+
+.card-header b {
+  font-size: 16px;
+}
+
+.transaction-details {
+  display: flex;
+  align-items: center;
+}
+
+.card-details {
+  flex: 1;
+}
+
+.button-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.button-links a {
+  flex: 1;
+  margin-right: 5px;
+}
+
+.nav-btn {
+  margin-top: 10px;
+}
+
+.card-header {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.card-body {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.transaction-row {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 8px;
+}
+
+.transaction-column {
+  flex: 2;
+}
+
+.align-center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.align-c {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.blue-link {
+  text-decoration: none;
+  color: rgb(112, 112, 114);
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+table img {
+  width: 80px;
+}

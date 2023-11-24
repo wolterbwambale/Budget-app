@@ -1,0 +1,37 @@
+<div class="navbar bg-primary px-2 mb-5 text-white">
+  <div class="nav-btn">
+    <%= link_to categories_path, class: 'btn btn-primary' do %>
+      <i class="fas fa-arrow-left"></i>
+    <% end %>
+  </div>
+  <div class="text-center">
+    <h2>Add a New Category</h2>
+  </div>
+</div>
+
+<%= form_with(model: @category, url: categories_path) do |form| %>
+  <% if @category.errors.any? %>
+    <div id="error_explanation">
+      <h3><%= pluralize(@category.errors.count, "error") %> prohibited this category from being saved:</h3>
+
+      <ul>
+      <% @category.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+ <div class="field">
+  <%= form.label :icon %>
+  <%= form.text_field :icon, class: 'form-control', placeholder: 'Icon Path' %>
+  <small class="text-muted">please fill the text box  with the icon link  </small>
+</div class="">
+  <%= form.submit "Save",class: "btn btn-secondary btn-block d-block w-100" %>
+<% end %>
+
+

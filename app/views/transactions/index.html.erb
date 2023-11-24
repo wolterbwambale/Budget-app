@@ -8,27 +8,30 @@
     <h2>Transactions</h2>
   </div>
   </div>
-<div class="card">
-<div class="total-transactions">
-  <h2>Total Amount: $<%= @total_amount %></h2>
-</div>
   <div class="card-header">
     <h1 class="card-title">Transactions for <%= @category.name %></h1>
   </div>
-  <div class="card-body">
-    <% @category.transactions.each do |transaction| %>
-      <div class="card  bg-white d-flex justify-content-between align-items-center">
-        <div class="card-body border-primary">
-          Name: <%= transaction.name %>
-        </div>
-        <div class="card-body">
-        Amount: $<%= transaction.amount %>
+  <div class="total-transactions">
+  <h2>Total Amount: $<%= @total_amount %></h2>
+</div>
+  <% @category.transactions.each do |transaction| %>
+    <div class="transaction-row">
+      <div class="transaction-column">
+        <div class="hr border-primary">
+          <%= transaction.name %>
         </div>
       </div>
-    <% end %>
+      <div class="transaction-column">
+        <div class="hr">
+           $<%= transaction.amount %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+   </div>
   </div>
   </div>
 </div>
-<div class="fix-bottom">
-    <%= link_to 'Add a new transaction', new_category_transaction_path(@category), class: "btn btn-success btn-block d-block w-100" %>
-    </div>
+<div class="fixed-bottom">
+    <%= link_to 'New transaction', new_category_transaction_path(@category), class: 'btn btn-primary btn-lg d-block w-100', style: 'background-color: #5fb523; padding: 20px; font-size: 24px;' %>
+  </div>
